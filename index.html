@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iphone Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bcg-blur">
+      <img src="./images/song1.jpg" alt="music-thumbnail" />
+    </div>
+
+    <div class="container">
+      <div class="songImg">
+        <img
+          src="https://assetsio.gnwcdn.com/apple-music-logo.png?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+          alt="music-thumbnail"
+        />
+      </div>
+
+      <div class="player">
+        <audio id="audio-player" controls></audio>
+
+        <div class="songInfoBlock">
+          <p>Song Name</p>
+          <p>Artist Name</p>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+
+        <div class="playerButton">
+          <button id="prevButton" class="btn">
+            <ion-icon name="play-back"></ion-icon>
+          </button>
+          <button id="play-pause-button" class="btn">
+            <ion-icon name="play"></ion-icon>
+          </button>
+          <button id="nextButton" class="btn">
+            <ion-icon name="play-forward"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
